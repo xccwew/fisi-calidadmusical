@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos-principal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - UNAP</title>
+    <link rel="icon" href="logo-facultad.png" type="image/x-icon">
+    
+</head>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #444;">
+
+    <!--barritas al costado-->
+    <header>
+        <button id="menuToggle" class="menu-toggle">
+            <span class="material-icons">menu</span>
+        </button>
+    </header>
+
+    <nav id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <button id="closeMenu" class="close-menu">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <ul>
+            <li><a href="index.html"><span class="material-icons">home</span> Inicio</a></li>
+
+        </ul>
+        <div class="important-notice">
+            <h3><span class="material-icons">warning</span> Aviso Importante</h3>
+            <p>El contenido presentado en esta página web tiene como objetivo principal servir como herramienta de aprendizaje y consulta para estudiantes universitarios, especialmente aquellos interesados en el campo de la producción musical, la ingeniería de sonido y áreas afines. La información proporcionada sobre los diferentes formatos de audio (MP3, WAV, FLAC, etc.).</p>
+        </div>
+    </nav>
+
+<!--barritas al costado-->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const sideMenu = document.getElementById('sideMenu');
+
+        menuToggle.addEventListener('click', () => {
+            sideMenu.classList.add('open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            sideMenu.classList.remove('open');
+        });
+    </script>
+<!--barritas al costado-->
+
+    <div class="caratula">
+        <div class="logos">
+    </div>
+
+        <div class="info">
+            <h1 style="text-align: justify;">La Evolución de la Calidad de Formatos de Música: Desde los Bits y Hertz hasta la Experiencia Auditiva</h1>
+            <div class="estudiante-info">
+               <hr>
+                <p>En la era digital, la música no solo se ha convertido en un arte accesible para todos, sino que también ha experimentado una transformación en términos de calidad y formato. Desde los antiguos CD de 16 bits y 44.1kHz hasta los modernos archivos de audio de 24 bits y 192kHz, la evolución de los formatos de música ha sido un viaje fascinante que ha mejorado la experiencia auditiva de los oyentes. En este artículo, exploraremos cómo los parámetros como el bitrate, la tasa de muestreo y la profundidad de bits influyen en la calidad del sonido, y cómo estos avances tecnológicos han transformado la forma en que disfrutamos de la música.</p>
+                <h1 style="text-align: justify;">1. Bitrate: La Velocidad del Sonido Digital</h1>
+                <hr>
+                <p> La Velocidad del Sonido Digital
+                    El bitrate, medido en kbps (kilobits por segundo), es una de las métricas más importantes que determinan la calidad de un archivo de audio. Representa la cantidad de datos que se procesan por segundo para codificar el sonido. Un bitrate más alto generalmente indica una mejor calidad de audio, ya que permite capturar más detalles y reducir la pérdida de información.
+                    <br></br>
+                    <b>Bitrate Bajo (128-320 kbps):</b> Comúnmente utilizado en formatos como MP3, ofrece una buena calidad para la mayoría de los oyentes, pero puede perder algunos matices y detalles.
+                    <br></br>
+                    <b>Bitrate Medio (1000-2000 kbps):</b> Ideal para formatos como AAC o MQA,M4A ofrece una experiencia más rica y detallada.
+                    <br></br>
+                    <b>Bitrate Alto (2500+ kbps):</b> Utilizado en formatos de alta resolución como FLAC o WAV, proporciona una fidelidad casi perfecta al sonido original.</p>
+                    <h1 style="text-align: justify;">2. Tasa de Muestreo (Sample Rate): La Frecuencia del Sonido</h1>
+                    <hr>
+                    <p>La tasa de muestreo, medida en Hz (hertz), indica la frecuencia a la que se capturan las muestras de sonido. Una tasa de muestreo más alta permite capturar más información del sonido, especialmente en las frecuencias más altas.
+                        <br></br>
+                        <b>44.1kHz:</b> El estándar para los CD, capaz de capturar la mayoría de las frecuencias audibles por el ser humano.
+                        <br></br> 
+                        <b>96kHz y 192kHz:</b> Formatos de alta resolución que permiten capturar frecuencias más allá del rango audible humano, mejorando la experiencia auditiva.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="indice">
+        <h2>Índice de Contenidos</h2>
+        <ul>
+            <li><strong>Tema Principal</strong>
+                <ul>
+                    <li><a href="Principal.html">Desarrollo del Tema Principal</a></li>
+                </ul>
+            </li>
+            <li><strong>Temas Secundarios</strong>
+                <ul>
+                    <li><a href="Secundario1.html">Tema Secundario 1</a></li>
+                    <li><a href="Secundario2.html">Tema Secundario 2</a></li>
+                    <li><a href="Secundario3.html">Tema Secundario 3</a></li>
+                </ul>
+            </li>
+            <li><strong>Referencias</strong>
+                <ul>
+                    <li><a href="Fuentes.html">Fuentes Bibliográficas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--botones direccionales-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <button id="backButton" class="fab-button fab-button-back" onclick="history.back()">
+        <span class="material-icons">arrow_back</span>
+    </button>
+    
+    <a href="#top" id="topButton" class="fab-button fab-button-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>  
+<!--botones direccionales-->
+<small style="color: aliceblue;">© 2024 Blog sobre Los Diferentes tipos de formatos de música. Universidad Nacional de La Amazonia Peruana.</small>
+</body>
+</html>
