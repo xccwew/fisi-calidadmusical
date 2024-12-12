@@ -476,4 +476,77 @@
       width: 100%;
     }
   }
-    
+
+  /* banners */
+.banner-container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Opcional: para bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: para añadir sombra */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .banner-container {
+      padding: 10px;
+  }
+}
+
+.audio-player {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.audio-player h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+/* Estilos personalizados para los controles de audio (pueden variar según el navegador) */
+.audio-player audio::-webkit-media-controls-panel {
+  background-color: #e0e0e0;
+}
+
+.audio-player audio::-webkit-media-controls-play-button {
+  background-color: #4CAF50;
+  border-radius: 50%;
+}
+
+.audio-player audio::-webkit-media-controls-current-time-display,
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+  color: #333;
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+  .audio-player {
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  .audio-player h3 {
+      font-size: 16px;
+  }
+}
