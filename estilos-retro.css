@@ -1,0 +1,493 @@
+
+
+.body {
+  line-height: 1.6;
+  color: #333;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+}
+.caratula, .indice {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #006341;
+  text-align: center;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+  align-items: left;
+}
+.logos img {
+  max-height: 120px;
+  width: auto;
+}
+.info {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.indice {
+  margin-top: 30px;
+}
+.indice ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.indice li {
+  margin-bottom: 12px;
+}
+.indice ul ul {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+a {
+  color: #006341; /* Color verde UNAP */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #00875a;
+  text-decoration: underline;
+}
+.estudiante-info {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.estudiante-info span {
+  font-weight: normal;
+}
+/* Estilos básicos para el menú */
+body {
+  font-family: Arial, sans-serif;
+}
+.menu-toggle {
+  display: block;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: inherit;;
+  margin: 20px;
+}
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.menu {
+  display: none;
+  top: 60px;
+  right: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilos para el checkbox oculto */
+#menu-checkbox {
+  display: none;
+}
+#menu-checkbox:checked ~ .menu {
+  display: block;
+}
+/* Estilos para el menú de navegación */
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #444;
+}
+/*botoones direccionales*/
+
+.fab-button {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #006341; /* Color primario, puedes cambiarlo */
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.fab-button:hover {
+  background-color: #00875a; /* Color más oscuro al pasar el mouse */
+  transform: scale(1.1);
+}
+
+.fab-button-back {
+  bottom: 20px;
+  left: 20px;
+}
+
+.fab-button-top {
+  bottom: 20px;
+  right: 20px;
+}
+
+.material-icons {
+  font-size: 10px;
+}
+
+/*barritas al costado*/
+:root {
+  --primary-color: #006341;
+  --on-primary-color: #ffffff;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --on-surface-color: #202124;
+  --text-color: #202124;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle, .close-menu {
+  background: none;
+  border: none;
+  color: var(--on-primary-color);
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: var(--surface-color);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.menu-header {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li a {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.side-menu ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.side-menu ul li a .material-icons {
+  margin-right: 10px;
+}
+
+.important-notice {
+  background-color: #fef3c7;
+  border-left: 1px solid #f59e0b;
+  margin: 16px;
+  padding: 16px;
+}
+
+.important-notice h3 {
+  display: flex;
+  align-items: center;
+  color: #b45309;
+  margin-top: 0;
+}
+
+.important-notice .material-icons {
+  margin-right: 3px;
+}
+
+main {
+  padding: 16px;
+}
+/*barritas al costado*/
+
+/* Estilos base para todos los dispositivos */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.body {
+  border-radius: 200%;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logos {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilos para dispositivos móviles (base) */
+header {
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.card {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Tablets (768px y superiores) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Desktops (992px y superiores) */
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Pantallas grandes (1200px y superiores) */
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ajustes para el menú lateral */
+.side-menu {
+  width: 80%;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .side-menu {
+    width: 300px;
+  }
+}
+
+/* Ajustes para los botones flotantes */
+.fab-button {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .fab-button {
+    width: 56px;
+    height: 56px;
+  }
+}
+ 
+  /* Ajustes para el menú lateral */
+  .side-menu {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .side-menu {
+      width: 300px;
+    }
+  }
+
+  /* Estilo Minimalista Google */
+
+.google-style-title {
+  background-color: #ffffff;
+  color: #202124;
+  border-radius: 10px;
+  font-size: 200%;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.google-style-subtitle {
+  background-color: #f1f3f4;
+  color: #5f6368;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.side-menu ul li a {
+  color: #202124;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.fab-button {
+  position: fixed;
+  bottom: 20px;
+  background-color: #ffffff;
+  color: #202124;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, sans-serif;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos-retro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - UNAP</title>
+    <link rel="icon" href="logo-facultad.png" type="image/x-icon"> 
+   
+</head>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #444;">
+
+    <!--barritas al costado-->
+    <header>
+        <button id="menuToggle" class="menu-toggle">
+            <span class="material-icons">menu</span>
+        </button>
+    </header>
+
+    <nav id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <button id="closeMenu" class="close-menu">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <ul>
+            <li><a href="#"><span class="material-icons">home</span> Inicio</a></li>
+
+        </ul>
+        <div class="important-notice">
+            <h3><span class="material-icons">warning</span> Aviso Importante</h3>
+            <p>El contenido presentado en esta página web tiene como objetivo principal servir como herramienta de aprendizaje y consulta para estudiantes universitarios, especialmente aquellos interesados en el campo de la producción musical, la ingeniería de sonido y áreas afines. La información proporcionada sobre los diferentes formatos de audio (MP3, WAV, FLAC, etc.).</p>
+        </div>
+    </nav>
+
+    <main>
+        <h2 class="google-style-title">Calidad de los formatos de música</h2>
+        <p class="google-style-subtitle">Una lista completa para todos los amantes de la música. Es un tesoro de recursos musicales para mejorar tu experiencia auditiva y descubrir música nueva.</p>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const sideMenu = document.getElementById('sideMenu');
+
+        menuToggle.addEventListener('click', () => {
+            sideMenu.classList.add('open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            sideMenu.classList.remove('open');
+        });
+    </script>
+
+<!--barritas al costado-->
+
+    <input type="checkbox" id="menu-checkbox">
+
+    <div class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <div class="caratula">
+        <div class="logos">
+            <img src="logo-unap.png" alt="Logo UNAP";>
+            <img src="logo-facultad.png" alt="Logo Facultad de Sistemas e Informática";>
+        </div>
+        <div class="info">
+            <h1>UNIVERSIDAD NACIONAL DE LA AMAZONÍA PERUANA</h1>
+            <h2>Facultad de Ingeniería de Sistemas e Informática</h2>
+            <div class="estudiante-info">
+                <p><strong>Estudiante:</strong><br>ARÉVALO QUINTANA, STIF ANDERSON</p>
+                <p><strong>Docente:</strong><br>Ing. LUIS HONORATO PITA ASTENGO</p>
+                <p><strong>Curso:</strong> Informática II</p>
+                <p><strong>Ciclo:</strong> 02</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="indice">
+        <h2>Índice de Contenidos</h2>
+        <ul>
+            <li><strong>Tema Principal</strong>
+                <ul>
+                    <li><a href="Principal.html">Desarrollo del Tema Principal</a></li>
+                </ul>
+            </li>
+            <li><strong>Temas Secundarios</strong>
+                <ul>
+                    <li><a href="Secundario1.html">Tema Secundario 1</a></li>
+                    <li><a href="Secundario2.html">Tema Secundario 2</a></li>
+                    <li><a href="Secundario3.html">Tema Secundario 3</a></li>
+                </ul>
+            </li>
+            <li><strong>Referencias</strong>
+                <ul>
+                    <li><a href="Fuentes.html">Fuentes Bibliográficas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--botones direccionales-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <button id="backButton" class="fab-button fab-button-back" onclick="history.back()">
+        <span class="material-icons">arrow_back</span>
+    </button>
+    
+    <a href="#top" id="topButton" class="fab-button fab-button-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>  
+<!--botones direccionales-->
+<small style="color: aliceblue;">© 2024 Blog sobre Los Diferentes tipos de formatos de música. Universidad Nacional de La Amazonia Peruana.</small>
+</body>
+</html>
