@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilo2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - UNAP</title>
+    <link rel="icon" href="../logo-facultad.png" type="image/x-icon">
+    
+</head>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #444;">
+
+    <!--barritas al costado-->
+    <header>
+        <button id="menuToggle" class="menu-toggle">
+            <span class="material-icons">menu</span>
+        </button>
+    </header>
+
+    <nav id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <button id="closeMenu" class="close-menu">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <ul>
+            <li><a href="../index.html"><span class="material-icons">home</span> Inicio</a></li>
+
+        </ul>
+        <div class="important-notice">
+            <h3><span class="material-icons">warning</span> Aviso Importante</h3>
+            <p>El contenido presentado en esta página web tiene como objetivo principal servir como herramienta de aprendizaje y consulta para estudiantes universitarios, especialmente aquellos interesados en el campo de la producción musical, la ingeniería de sonido y áreas afines. La información proporcionada sobre los diferentes formatos de audio (MP3, WAV, FLAC, etc.).</p>
+        </div>
+    </nav>
+
+<!--barritas al costado-->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const sideMenu = document.getElementById('sideMenu');
+
+        menuToggle.addEventListener('click', () => {
+            sideMenu.classList.add('open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            sideMenu.classList.remove('open');
+        });
+    </script>
+<!--barritas al costado-->
+
+    <div class="caratula">
+        <div class="logos">
+    </div>
+
+        <div class="info">
+            <h2 class="google-style-title">¿Como puedo Descargar y disfrutar este tipo de Música?</h2>
+                <hr>
+            <div class="estudiante-info">
+               <hr>
+            <h1 style="text-align: justify;">Cómo Descargar y Disfrutar de Música de Alta Calidad</h1>
+            <div class="estudiante-info">
+               <hr>
+               <figure class="lossy">
+                <img  width="100%" height="300"  src="image.jpg" alt="calidad">
+            </figure>
+            <p>La música de alta calidad, como los formatos <strong>FLAC</strong>, <strong>WAV</strong> o archivos de <strong>24 bits y 96kHz</strong>, ofrece una experiencia auditiva superior al capturar más detalles y reducir la pérdida de información. A continuación, te explico cómo puedes descargar y disfrutar de este tipo de música.</p>
+
+            <h2>1. Elegir el Formato de Audio Correcto</h2>
+        
+            <p>Antes de descargar música, es importante elegir el formato adecuado según tus necesidades:</p>
+        
+            <ul>
+                <li><strong>FLAC (Free Lossless Audio Codec):</strong> Un formato sin pérdida que preserva la calidad original del audio. Es ideal para audiófilos.</li>
+                <li><strong>WAV:</strong> Un formato nativo de Windows que también es sin pérdida, pero ocupa más espacio que FLAC.</li>
+                <li><strong>MP3:</strong> Un formato con pérdida que reduce el tamaño del archivo a costa de la calidad. Es más adecuado para dispositivos con almacenamiento limitado.</li>
+            </ul>
+        
+            <p>Fuente: <a href="https://www.lifewire.com/what-is-flac-2438735" target="_blank">What Is FLAC? The High-Def Music Format Explained</a></p>
+        
+            <h2>2. Encontrar Plataformas de Música de Alta Calidad</h2>
+        
+            <p>Existen varias plataformas que ofrecen música en formatos de alta calidad. Aquí tienes algunas opciones:</p>
+        
+            <ul>
+                <li><strong>Qobuz:</strong> Una plataforma de streaming que ofrece música en formatos de alta resolución, como 24 bits/192kHz.</li>
+                <li><strong>Tidal:</strong> Otra plataforma de streaming que ofrece música en alta resolución, incluyendo Master Quality Authenticated (MQA).</li>
+                <li><strong>Bandcamp:</strong> Una plataforma donde artistas pueden vender sus propios álbumes en formatos como FLAC y WAV.</li>
+                <li><strong>HDtracks:</strong> Una tienda en línea que ofrece descargas de alta resolución de música clásica, jazz y pop.</li>
+            </ul>
+        
+            <p>Fuente: <a href="https://www.digitaltrends.com/music/best-places-to-buy-high-resolution-music/" target="_blank">The Best Places to Buy High-Resolution Music Online</a></p>
+        
+            <h2>3. Configurar tu Equipo para Música de Alta Calidad</h2>
+        
+            <p>Para disfrutar de música de alta calidad, necesitas un equipo adecuado:</p>
+        
+            <ul>
+                <li><strong>Reproductores de Audio:</strong> Asegúrate de que tu reproductor de audio (como un teléfono, tableta o computadora) soporte formatos como FLAC o WAV.</li>
+                <li><strong>Auriculares o Altavoces:</strong> Invierte en auriculares o altavoces de alta calidad para aprovechar al máximo la fidelidad del audio.</li>
+                <li><strong>Software de Reproducción:</strong> Usa reproductores como VLC, Foobar2000 o JRiver Media Center, que soportan formatos de alta resolución.</li>
+            </ul>
+        
+            <p>Fuente: <a href="https://www.lifewire.com/how-to-play-high-resolution-audio-files-2438736" target="_blank">How to Play High-Resolution Audio Files</a></p>
+        
+            <h2>4. Descargar Música de Alta Calidad</h2>
+        
+            <p>Una vez que hayas elegido una plataforma, sigue estos pasos para descargar música:</p>
+        
+            <ol>
+                <li><strong>Regístrate en la plataforma:</strong> Crea una cuenta en la plataforma de tu elección (si es necesario).</li>
+                <li><strong>Explora la biblioteca:</strong> Busca álbumes o canciones disponibles en alta resolución.</li>
+                <li><strong>Descarga el archivo:</strong> Selecciona el formato deseado (FLAC, WAV, etc.) y descarga el archivo.</li>
+                <li><strong>Transfiere el archivo:</strong> Copia el archivo descargado a tu reproductor de audio o dispositivo de almacenamiento.</li>
+            </ol>
+        
+            <p>Fuente: <a href="https://www.howtogeek.com/442533/how-to-download-music-from-bandcamp/" target="_blank">How to Download Music from Bandcamp</a></p>
+        
+            <h2>5. Disfrutar de la Música de Alta Calidad</h2>
+        
+            <p>Para disfrutar al máximo de la música de alta calidad:</p>
+        
+            <ul>
+                <li><strong>Escucha en un entorno tranquilo:</strong> La música de alta calidad destaca en ambientes silenciosos.</li>
+                <li><strong>Usa un sistema de audio de alta fidelidad:</strong> Auriculares o altavoces de alta gama mejorarán tu experiencia.</li>
+                <li><strong>Ajusta el volumen adecuado:</strong> Evita escuchar a volúmenes excesivos para preservar la calidad del sonido.</li>
+            </ul>
+        
+            <p>Fuente: <a href="https://www.head-fi.org/threads/how-to-enjoy-high-resolution-audio.705493/" target="_blank">How to Enjoy High-Resolution Audio</a></p>
+        
+            <h2>Conclusión</h2>
+        
+            <p>Descargar y disfrutar de música de alta calidad requiere elegir el formato adecuado, encontrar plataformas confiables y configurar tu equipo para reproducir los archivos correctamente. Con las plataformas como Qobuz, Tidal, Bandcamp y HDtracks, y un equipo de audio de calidad, podrás experimentar la música como nunca antes.</p>
+        
+            <h2>Referencias</h2>
+        
+            <ul>
+                <li><a href="https://www.lifewire.com/what-is-flac-2438735" target="_blank">What Is FLAC? The High-Def Music Format Explained</a></li>
+                <li><a href="https://www.digitaltrends.com/music/best-places-to-buy-high-resolution-music/" target="_blank">The Best Places to Buy High-Resolution Music Online</a></li>
+                <li><a href="https://www.lifewire.com/how-to-play-high-resolution-audio-files-2438736" target="_blank">How to Play High-Resolution Audio Files</a></li>
+                <li><a href="https://www.howtogeek.com/442533/how-to-download-music-from-bandcamp/" target="_blank">How to Download Music from Bandcamp</a></li>
+                <li><a href="https://www.head-fi.org/threads/how-to-enjoy-high-resolution-audio.705493/" target="_blank">How to Enjoy High-Resolution Audio</a></li>
+            </ul>
+               <hr>
+               <figure class="lossy">
+                <img  width="100%" height="300"  src="images.png" alt="calidad">
+            </figure>
+        
+
+            <!-- Espacio para audio -->
+            <div class="audio-demo">
+                <h3>Acontinuacion la Demostración de Audio de calidad</h3>
+                <audio controls>
+                    <source src="demo1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+
+            <!-- Espacio para video -->
+            <div class="video-demo">
+                <h3>Video Explicativo de Sobre los audios de calidad</h3>
+                <video controls width="100%">
+                    <source src="video-explicativo.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </article>
+    </main>
+
+    <nav class="navigation-links">
+        <a href="../Contenido1/Secundario1.html" class="nav-button">
+            <span class="material-icons">arrow_back</span>
+            Regresar al Anterior
+        </a>
+        <a href="../index.html" class="nav-button">
+            Casa o Inicio
+            <span class="material-icons">home</span>
+        </a>
+        <a href="../Contenido3/Secundario3.html" class="nav-button">
+            Siguiente
+            <span class="material-icons">arrow_forward</span>
+        </a>
+    </nav>
+    
+<ul>
+
+
+    <br>
+</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="indice">
+        <h2>Índice de Contenidos</h2>
+        <ul>
+            <li><strong>Tema Principal</strong>
+                <ul>
+                    <li><a href="./Principal/Principal.html">Desarrollo Principal del Tema</a></li>
+                </ul>
+            </li>
+            <li><strong>Temas Secundarios</strong>
+                <ul>
+                    <li><a href="../Contenido1/Secundario1.html">FORMATOS DE AUDIO: TODO LO QUE NECESITAS SABER</a></li>
+                    <li><a href="../Contenido2/Secundario2.html">¿Como puedo Descargar y disfrutar este tipo de Música?</a></li>
+                    <li><a href="../Contenido3/Secundario3.html">Los Mejores Repositorios de Github Para experimentar la mejor calidad de sonido segun tus Preferencias</a></li>
+                </ul>
+            </li>
+            <li><strong>Referencias</strong>
+                <ul>
+                    <li><a href="../Fuentes/Fuentes.html">Fuentes Bibliográficas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--botones direccionales-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <button id="backButton" class="fab-button fab-button-back" onclick="history.back()">
+        <span class="material-icons">arrow_back</span>
+    </button>
+    
+    <a href="#top" id="topButton" class="fab-button fab-button-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>  
+<!--botones direccionales-->
+<small style="color: aliceblue;">© 2024 Blog sobre Los Diferentes tipos de formatos de música. Universidad Nacional de La Amazonia Peruana.</small>
+</body>
+</html>

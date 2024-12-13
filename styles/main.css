@@ -302,13 +302,7 @@
     padding: 0;
     font-size: 16px;
   }
-  
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+
   
   .logos {
     max-width: 100%;
@@ -455,7 +449,7 @@
     background-color: #ffffff;
     color: #202124;
     border-radius: 10px;
-    font-size: 200%;
+    font-size: 400%;
     padding: 15px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;

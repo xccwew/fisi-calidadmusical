@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilo1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - UNAP</title>
+    <link rel="icon" href="../logo-facultad.png" type="image/x-icon">
+    
+</head>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #444;">
+
+    <!--barritas al costado-->
+    <header>
+        <button id="menuToggle" class="menu-toggle">
+            <span class="material-icons">menu</span>
+        </button>
+    </header>
+
+    <nav id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <button id="closeMenu" class="close-menu">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <ul>
+            <li><a href="../index.html"><span class="material-icons">home</span> Inicio</a></li>
+
+        </ul>
+        <div class="important-notice">
+            <h3><span class="material-icons">warning</span> Aviso Importante</h3>
+            <p>El contenido presentado en esta página web tiene como objetivo principal servir como herramienta de aprendizaje y consulta para estudiantes universitarios, especialmente aquellos interesados en el campo de la producción musical, la ingeniería de sonido y áreas afines. La información proporcionada sobre los diferentes formatos de audio (MP3, WAV, FLAC, etc.).</p>
+        </div>
+    </nav>
+
+<!--barritas al costado-->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const sideMenu = document.getElementById('sideMenu');
+
+        menuToggle.addEventListener('click', () => {
+            sideMenu.classList.add('open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            sideMenu.classList.remove('open');
+        });
+    </script>
+<!--barritas al costado-->
+
+    <div class="caratula">
+        <div class="logos">
+    </div>
+
+        <div class="info">
+            <h2 class="google-style-title">Formatos de Audio: Todo lo que deberias saber</h2>
+    
+                <p class="google-style-subtitle">A lo largo de los años, han aparecido multitud de formatos de audio diferentes, con ciertas características y propiedades específicas de cada uno. Todo el mundo conoce el formato MP3, el códec de audio más extendido, pero no es, ni mucho menos, el único.
+                <hr>
+            <strong>nota:<br>solo pondre los archivos de audio mas usados o los que se deberian usar en teoria ya que hay varias variantes de estos ya sea para profesionalismo musica y produccion gracias!!</strong></h1>
+            <hr>
+
+            
+
+            <div class="estudiante-info">
+               <hr>
+            <h1 style="text-align: justify;">Formato WAV (Microsoft, 1991)</h1>
+            <div class="estudiante-info">
+               <hr>
+               <figure class="lossy">
+                <img  width="100%" height="300"  src="formato-wav.jpg" alt="formato WAV">
+            </figure>
+               <p>En primer lugar vamos a hablar del <strong>formato WAV</strong>, que aunque es un formato de audio, es diferente al resto de formatos de los que hablaremos puesto que este es realmente un <strong>contenedor</strong>, que puede tener en su interior información comprimida o no. No obstante, se suele entender por WAV, el formato con los datos sin comprimir.</p>
+               <p>Los archivos <strong>WAV</strong> son los equivalente al <a href="https://es.wikipedia.org/wiki/RAW">formato RAW</a> de la fotografía, lo que se denomina un formato «crudo». En este caso, se trata de un formato de Microsoft que recoge el audio de una forma muy aproximada y exacta al sonido real.</p>
+               <p>El <strong>formato WAV</strong> se caracteriza en que <strong>ocupa gran cantidad de espacio en disco</strong> (<em>dependiendo de su duración, 5min = 50MB aproximadamente</em>), lo que lo hace poco práctico para almacenar en disco, y mucho menos en dispositivos o reproductores portátiles donde el espacio es limitado.</p>
+               <p>Su <strong>ventaja</strong> es que la calidad de audio es muy fiel al original capturado, y que al ser un formato sin compresión, pueden realizarse operaciones de edición de forma muy rápida. La mayoría de programas de <a href="https://en.wikipedia.org/wiki/Dolby_Digital_Plus">edición de sonido</a> trabajan en este «formato crudo» (<em>o alguno similar</em>) de forma temporal, pasándolo a un formato comprimido sólo al guardarlo a disco.</p>
+               <hr>
+                <h1 style="text-align: justify;">Lossy vs Lossless</h1>
+                <hr>
+                <figure class="lossy">
+                    <img  width="100%" height="300"  src="lossy-lossless.jpg" alt="Compresión de audio: Formatos con pérdidas (lossy) y sin pérdidas (lossless)">
+                </figure>
+                <ul>
+                    <li>
+                        <p><strong>Lossy</strong> (<em>formato de audio con pérdidas</em>): Es aquel formato que, a partir de un audio original, elimina toda la información irrelevante (<em>sonido imperceptible por el oído humano, por ejemplo</em>) y lo convierte en una aproximación bastante fiel a la original. Por eso se denomina un «formato con pérdidas». Su mayor ventaja: El <strong>tamaño del fichero</strong> es considerablemente más pequeño (<em>depende de la calidad establecida al realizar la compresión</em>). Su mayor inconveniente: Algunas personas son capaces de notar la <strong>reducción de calidad</strong>.</p>
+                    </li>
+                    <li>
+                        <p><strong>Lossless</strong> (<em>formato de audio sin pérdidas</em>): Por otra parte, los formatos lossless son un tipo de formato comprimido mediante el cual es posible recomponer y obtener exactamente el audio original sin ningún tipo de pérdida de información (<em>cosa que no es posible con el anterior</em>). Su mayor ventaja: La <strong>calidad</strong> de audio, es mucho más fiel. Su mayor <strong>inconveniente</strong>: El <strong>tamaño del fichero</strong>, que aunque es menor que el audio original, sigue siendo bastante superior a los formatos <strong>lossy</strong>.</p>
+                    </li>
+                    <hr>
+                </ul>
+                    <h1 style="text-align: justify;">Formato AC3 (Dolby Laboratories, 1993)</h1>
+                    <hr>
+                    <figure class="lossy">
+                        <img  width="100%" height="300"  src="formato-ac3.jpg" alt="formato AC3">
+                    </figure>
+                    <p>Una de las principales limitaciones de los MP3 eran los canales de audio, donde podías tener 1 canal (<em>mono</em>) ó 2 canales (<em>estéreo</em>).</p>
+                    <p>Sin embargo, por aquel entonces el <a href="https://es.wikipedia.org/wiki/Surround">surround o sonido envolvente</a> comenzaba a ponerse de moda, y el formato MP3 original no lo soportaba. Ahí entró en escena el <strong>formato AC-3</strong>, también llamado <strong>Dolby Digital</strong> que soportaba desde un solo canal (<em>audio mono</em>), dos canales (<em>audio stereo</em>), cuatro canales (<em>audio cuadrafónico</em>) y hasta canales 5.1 (<em>audio surround</em>).</p>
+                    <p>Empezó a utilizarse (<em>y hacerse popular</em>) por su uso en los canales de audio de videos y películas que necesitaban 5.1 para el sonido envolvente. Posteriormente, otros formatos derivados comenzaron a soportar más canales, como <strong>Dolby Digital Plus</strong> (<em>hasta 7.1</em>) o <strong>Dolby TrueHD</strong> (<em>hasta 8</em>).</p>
+                    <p>URL | <a href="http://www.ac3filter.net/">AC3Filter</a>
+                    <hr>
+
+                    <h1 style="text-align: justify;">Formato MPEG-3 (MPEG, 1993)</h1>
+
+                    <hr>
+                    <figure class="lossy">
+                        <img  width="100%" height="300"  src="formato-mp3.jpg" alt="formato AC3">
+                    </figure>
+                    <p>El formato de audio más popular y que todos conocemos es el <strong>MP3</strong>. Al contrario de lo que muchos creen, <strong>MP3</strong> no es <strong>MPEG-3</strong>, sino <strong>MPEG-1 Layer 3</strong>. Antes de llegar esta versión, se pasó por otros dos formatos: <strong>MPEG-1 Layer 1</strong> (<em>MP1</em>) y <strong>MPEG-1 Layer 2</strong> (<em>MP2</em>), ambos surgieron también en 1993 y evolucionaron muy rápidamente. <strong>MP3</strong> fue el que obtuvo gran popularidad debido a su gran calidad de sonido, versatilidad, bajo tamaño debido a su compressión <strong>lossy</strong> (<em>5min = 5MB, dependiendo de la calidad</em>), y su rapidez de compresión/descompresión.</p>
+                    <p>Hoy en día es soportado por prácticamente cualquier software relacionado con el audio, reproductor de música portátil o sistema relacionado con audio.</p>
+                    <p>Los MP3 (<em>así como otros formatos de audio</em>) tienen varias características adicionales. Por ejemplo, dos de ellas:</p>
+                    <ul>
+                        <li>
+                            <p>El <strong>bitrate</strong> (<em>tasa de bits</em>): Es la calidad del MP3, un número que puede ir de 32kbps (<em>calidad mínima, tamaño menor</em>) a 320kbps (<em>calidad máxima, tamaño mayor</em>). Actualmente, se utilizan valores alrededor de 192kbps (<em>o superiores</em>) para garantizar una calidad aceptable.</p>
+                        </li>
+                        <li>
+                            <p>El <strong>método</strong> de compresión: <a href="https://es.wikipedia.org/wiki/Tasa_de_bits_constante">CBR</a>, que define que todo el audio se comprime de forma constante, al mismo bitrate, o <a href="https://es.wikipedia.org/wiki/Tasa_de_bits_variable">VBR</a>, que define que el audio se comprime de forma variable, reduciendo el bitrate en los instantes en los que no es necesario tener bitrate alto.</p>
+                        </li>
+                    </ul>
+                    <p>Para los usuarios de Windows, en SourceForge tienen <a href="http://sourceforge.net/projects/mp3ext/">MP3ext</a> una actualización para Windows 7 (<em>incluido 64 bits</em>) de este clásico programa que reemplaza los iconos de los MP3 por un icono con su <strong>bitrate</strong>.</p>
+                    <p>Además, los archivos MP3 también permiten guardar <a href="https://es.wikipedia.org/wiki/ID3">metadatos ID3</a>, que no es más que la posibilidad de guardar en el archivo de audio información relacionada: nombre de la canción, artista, género, descripción, carátula del disco, año, etc... Un buen programa para gestionar esto es <a href="http://www.mp3tag.de/en/">MP3tag</a>.</p>
+                    <p>Aparecieron otros formatos derivados como <a href="https://es.wikipedia.org/wiki/Mp3PRO">Mp3Pro</a> o <a href="https://es.wikipedia.org/wiki/MP3_Surround">MP3 Surround</a>, pero nunca llegaron a extenderse tanto como el MP3 original.</p>
+<hr>
+                    <h1 style="text-align: justify;">Formato FLAC (Xiph.org, 2001)</h1>
+                    <hr>
+                  
+                    <figure class="lossy">
+                        <img  width="100%" height="300"  src="formato-flac.jpg" alt="formato AC3">
+                    </figure>
+                    <p>El <strong>Formato FLAC</strong> es un formato de audio desarrollado por <a href="https://es.wikipedia.org/wiki/Xiph.org">Xiph.org</a> en 2001. Este formato es más eficiente y más versátil que el MP3, ya que utiliza una <strong>compresión sin pérdida</strong> (lossless), lo que significa que no se pierde información durante la compresión. Esto permite que los archivos FLAC sean más pequeños y son más rápidos de descargar o reproducir.</p>
+                    <br>
+                    <p>Dentro de los formatos de audio sin pérdida de compresión, uno bastante popular es el formato abierto <strong>FLAC</strong>. Como mencionamos anteriormente, este tipo de formatos <strong>lossless</strong> comprimen la información de modo que es posible revertir esa compresión y volver a su estado original, funcionando de una forma similar a los <a href="https://es.wikipedia.org/wiki/Compresi%C3%B3n_de_audio">formatos de compresión</a> como <strong>ZIP</strong> (<em>optimizada para audio</em>), pero sin la necesidad de tener que descomprimirlo para escucharlo.</p>
+<p>URL | <a href="https://xiph.org/flac/">FLAC</a>
+<hr>
+    <h1 style="text-align: justify;">El formato AC-4 Proxima generación de audio de streaming integrado</h1>
+    <hr>
+  
+    <figure class="lossy">
+        <img  width="100%" height="300"  src="392b7778223ee7304e9c4b595cd11714.jpg" alt="formato AC3">
+    </figure>
+
+    <p>El formato AC-4 representa una evolución significativa en la tecnología de audio digital, especialmente cuando se combina con Dolby Atmos. Este sistema revolucionario ha transformado la manera en que experimentamos el sonido en diferentes entornos, desde cines hasta dispositivos móviles.</p>
+
+            <section>
+                <h3>¿Qué es AC-4?</h3>
+                <p>AC-4 es un códec de audio de última generación desarrollado por Dolby Laboratories. Este formato fue diseñado específicamente para satisfacer las demandas de las tecnologías de transmisión modernas y ofrece varias ventajas significativas sobre sus predecesores:</p>
+                <ul>
+                    <li>Mayor eficiencia en la compresión de audio</li>
+                    <li>Mejor calidad de sonido a tasas de bits más bajas</li>
+                    <li>Soporte para audio inmersivo y basado en objetos</li>
+                    <li>Capacidad de personalización del diálogo</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Integración con Dolby Atmos</h3>
+                <p>La combinación de AC-4 con Dolby Atmos crea una experiencia de audio verdaderamente inmersiva. Dolby Atmos permite:</p>
+                <ul>
+                    <li>Posicionamiento preciso del sonido en un espacio tridimensional</li>
+                    <li>Hasta 128 canales de audio simultáneos</li>
+                    <li>Renderización dinámica del audio según el sistema de reproducción</li>
+                    <li>Compatibilidad con diversos dispositivos y configuraciones</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Características Técnicas Principales</h3>
+                <p>El formato AC-4 ofrece especificaciones técnicas avanzadas que lo distinguen de otros formatos de audio:</p>
+                <ul>
+                    <li>Frecuencias de muestreo: Hasta 192 kHz</li>
+                    <li>Profundidad de bits: Hasta 24 bits</li>
+                    <li>Canales: Soporte para configuraciones desde 2.0 hasta 7.1.4</li>
+                    <li>Bitrate: Altamente eficiente, desde 48 kbps hasta 768 kbps</li>
+                    <li>Latencia: Reducida para mejor sincronización</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Aplicaciones Prácticas</h3>
+                <p>El sistema AC-4 Dolby Atmos encuentra aplicación en diversos campos:</p>
+                <ul>
+                    <li>Transmisión de televisión digital</li>
+                    <li>Streaming de contenido</li>
+                    <li>Producción cinematográfica</li>
+                    <li>Videojuegos</li>
+                    <li>Realidad virtual y aumentada</li>
+                </ul>
+            </section>
+
+
+            <!-- Espacio para audio -->
+            <div class="audio-demo">
+                <h3 >Acontinuacion lesDemostración de Audio AC-4</h3>
+                <audio controls>
+                    <source src="demoac-4.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Espacio para video -->
+            <div class="video-demo">
+                <h3>Video Explicativo de AC-4 Dolby Atmos</h3>
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/MYTyTN59rVc?si=FkLRJZPAtB44JT_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </article>
+    </main>
+
+    <nav class="navigation-links">
+        <a href="../Principal/Principal.html" class="nav-button">
+            <span class="material-icons">arrow_back</span>
+            Regresar al Anterior
+        </a>
+        <a href="../index.html" class="nav-button">
+            Casa o Inicio
+            <span class="material-icons">home</span>
+        </a>
+        <a href="../Contenido2/Secundario2.html" class="nav-button">
+            Siguiente
+            <span class="material-icons">arrow_forward</span>
+        </a>
+    </nav>
+    
+<ul>
+
+
+    <br>
+</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="indice">
+        <h2>Índice de Contenidos</h2>
+        <ul>
+            <li><strong>Tema Principal</strong>
+                <ul>
+                    <li><a href="../Principal/Principal.html">Desarrollo Principal del Tema</a></li>
+                </ul>
+            </li>
+            <li><strong>Temas Secundarios</strong>
+                <ul>
+                    <li><a href="../Contenido1/Secundario1.html">FORMATOS DE AUDIO: TODO LO QUE NECESITAS SABER</a></li>
+                    <li><a href="../Contenido2/Secundario2.html">¿Como puedo Descargar y disfrutar este tipo de Música?</a></li>
+                    <li><a href="../Contenido3/Secundario3.html">Los Mejores Repositorios de Github Para experimentar la mejor calidad de sonido segun tus Preferencias</a></li>
+                </ul>
+            </li>
+            <li><strong>Referencias</strong>
+                <ul>
+                    <li><a href="../Fuentes/Fuentes.html">Fuentes Bibliográficas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--botones direccionales-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <button id="backButton" class="fab-button fab-button-back" onclick="history.back()">
+        <span class="material-icons">arrow_back</span>
+    </button>
+    
+    <a href="#top" id="topButton" class="fab-button fab-button-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>  
+<!--botones direccionales-->
+<small style="color: aliceblue;">© 2024 Blog sobre Los Diferentes tipos de formatos de música. Universidad Nacional de La Amazonia Peruana.</small>
+</body>
+</html>

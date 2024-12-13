@@ -1,5 +1,5 @@
 
-  .caratula, .indice {
+.caratula, .indice {
     background-color: #fff;
     border: 2px solid #ddd;
     border-radius: 8px;
@@ -414,10 +414,10 @@
     /* Estilo Minimalista Google */
   
   .google-style-title {
-    background-color: goldenrod;
+    background-color: #ffffff;
     color: #202124;
     border-radius: 10px;
-    font-size: 300%;
+    font-size: 200%;
     padding: 15px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -602,3 +602,61 @@ body {
       justify-content: center;
   }
 }
+
+        body {
+            line-height: 1.6;
+            color: var(--on-surface-color);
+            background-color: var(--surface-color);
+        }
+
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 0 16px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: var(--on-primary-color);
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-button:hover, .nav-button:focus {
+            background-color: #7c4dff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .nav-button .material-icons {
+            font-size: 18px;
+            margin: 0 4px;
+        }
+
+        @media (max-width: 600px) {
+            .navigation-links {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .nav-button {
+                justify-content: center;
+            }
+        }
+
+        .google-style-title {
+            background-color: greenyellow;
+            color: #202124;
+            border-radius: 10px;
+            font-size: 300%;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+          }
