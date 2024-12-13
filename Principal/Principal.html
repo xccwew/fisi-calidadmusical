@@ -86,11 +86,32 @@
                         <b>44.1kHz:</b> El estándar para los CD, capaz de capturar la mayoría de las frecuencias audibles por el ser humano.
                         <br></br> 
                         <b>96kHz y 192kHz:</b> Formatos de alta resolución que permiten capturar frecuencias más allá del rango audible humano, mejorando la experiencia auditiva.</p>
-                        <p>Un Ejemplo Sobre las diferentes calidades de sonido:</p>
-
-                        <div class="banner-container">
-                            <img src="ejemplo22.png" alt="Music Mega-Thread Banner" class="banner-image">
+                        <p>Un Ejemplo Sobre las diferentes calidades de sonido: puedes hacer click en la imagen para agrandarla 
+                        </p>
+                    <div class="banner-container">
+                        <img src="ejemplo22.png" onclick="openLightbox(this)" class="banner-image">
+                    </div>
+                        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                            <span class="close">&times;</span>
+                            <img id="lightboxImage" src="" alt="Imagen expandida">
                         </div>
+                    
+                        <script>
+                            function openLightbox(img) {
+                                var lightbox = document.getElementById("lightbox");
+                                var lightboxImg = document.getElementById("lightboxImage");
+                                lightbox.style.display = "flex";
+                                lightboxImg.src = img.src;
+                            }
+                    
+                            function closeLightbox() {
+                                var lightbox = document.getElementById("lightbox");
+                                lightbox.style.display = "none";
+                            }
+                        </script>
+
+
+                        
 
                         <iframe class="videoyt" width=100% height="400" src="https://www.youtube.com/embed/rundDEGXPFE?si=xMviC5p9ivQ8xYlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
