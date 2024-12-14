@@ -629,3 +629,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+        /* Estilo para centrar el texto */
+        .footer {
+          text-align: center; /* Centra el texto horizontalmente */
+      }

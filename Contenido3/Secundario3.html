@@ -10,6 +10,54 @@
 </head>
 <body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #444;">
 
+
+    <button id="musicButton" class="music-button" aria-label="Reproducir/Pausar música" alt="" class="m-audio-player__icon m-audio-player__icon--active">
+    <img src="data:image/png;base64,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"alt="gaito">
+    </button>
+
+    
+    
+    <audio id="backgroundMusic">
+        <source src="Lenny Kravitz - Fly Away.flac" type="audio/mpeg"><link rel="stylesheet" href="">
+    </audio>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const musicButton = document.getElementById('musicButton');
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            let isPlaying = false;
+    
+            function togglePlay() {
+                if (isPlaying) {
+                    backgroundMusic.pause();
+                    musicButton.innerHTML = '▶';
+                    musicButton.setAttribute('aria-label', 'Reproducir música');
+                } else {
+                    backgroundMusic.play().then(() => {
+                        musicButton.innerHTML = '⏸';
+                        musicButton.setAttribute('aria-label', 'Pausar música');
+                    }).catch(error => {
+                        console.error('Error al reproducir:', error);
+                    });
+                }
+                isPlaying = !isPlaying;
+            }
+    
+            musicButton.addEventListener('click', togglePlay);
+    
+            // Intenta reproducir automáticamente
+            backgroundMusic.play().then(() => {
+                isPlaying = true;
+                musicButton.innerHTML = '⏸';
+                musicButton.setAttribute('aria-label', 'Pausar música');
+            }).catch(error => {
+                console.log('Reproducción automática bloqueada:', error);
+                // La reproducción automática fue bloqueada, el usuario tendrá que hacer clic en el botón
+            });
+        });
+    </script>
+
+    
     <!--barritas al costado-->
     <header>
         <button id="menuToggle" class="menu-toggle">
@@ -61,7 +109,7 @@
             <h1 style="text-align: justify;">1. MoonWalker440/Music-Megathread puede ser una herramienta valiosa para los amantes de la música.</h1>
             <div class="estudiante-info">
                <hr>
-               <h3>Repositorio de GitHub: echo</h3>
+               <h3>Repositorio de GitHub: MoonWalker440/Music-Megathread</h3>
                <figure class="lossy">
                 <img  width="100%" height="300"  src="enli.jpg" alt="calidad" >
                <h1>Bienvenido a la Música de Alta Calidad</h1>
@@ -144,25 +192,30 @@
     <hr>
     <h1 style="text-align: justify;">2.Repositorio Echoir Donwloader De alta Calidad MQA, Hifi, AC-4,EAC3, LOSSLES</h1>
            <hr>
-           <h3>Repositorio de GitHub: echo</h3>
+           <h3>Repositorio de GitHub: Echoir</h3>
            <figure class="lossy">
-            <img  width="100%" height="300"  src="imge3.jpg" alt="calidad">
-        <p>
+            <img  width="100%" height="300"  src="banner.jpg" alt="calidad">
+            <p>
+                El repositorio <strong>Echoir</strong> es un proyecto desarrollado por <strong>imjyotiraditya</strong> en GitHub. Este repositorio puede contener código relacionado con el procesamiento de audio, herramientas de ingeniería de sonido o cualquier otro proyecto relacionado con la tecnología del sonido.
+            </p>
+            <p>
+                Algunos aspectos destacados del repositorio incluyen:
+            </p>
+            <ul>
+                <li><strong>Código fuente:</strong> Archivos de programación en lenguajes como Python, C++, o JavaScript, que implementan funcionalidades relacionadas con el audio.</li>
+                <li><strong>Herramientas de audio:</strong> Scripts o aplicaciones que permiten procesar, analizar o manipular archivos de audio.</li>
+                <li><strong>Documentación:</strong> Archivos README o documentación detallada que explica cómo usar el proyecto.</li>
+                <li><strong>Ejemplos:</strong> Archivos de audio de ejemplo o casos de uso que muestran las capacidades del proyecto.</li>
+                <li><strong>Licencia:</strong> Información sobre la licencia del proyecto, que define cómo se puede usar y distribuir el código.</li>
+            </ul>
+            <p>
+                Para acceder al repositorio, visita la página oficial en GitHub: <a href="https://github.com/imjyotiraditya/Echoir" target="_blank">https://github.com/imjyotiraditya/Echoir</a>.
+            </p>
+            <p>
+                Este repositorio puede ser útil para desarrolladores interesados en el procesamiento de audio, la creación de herramientas de audio o la experimentación con tecnologías relacionadas con el sonido.
+            </p>
+        </div>
 
-            El repositorio <strong>echo</strong> es un proyecto desarrollado por <strong>brahmkshatriya</strong> en GitHub. Este repositorio puede contener código relacionado con el procesamiento de audio, herramientas de ingeniería de sonido o cualquier otro proyecto relacionado con la tecnología del sonido.
-        </p>
-        <p>
-            Algunos aspectos destacados del repositorio incluyen:
-        </p>
-        <ul>
-            <li><strong>Código fuente:</strong> Archivos de programación en lenguajes como Python, C++, o JavaScript, que implementan funcionalidades relacionadas con el audio.</li>
-            <li><strong>Herramientas de audio:</strong> Scripts o aplicaciones que permiten procesar, analizar o manipular archivos de audio.</li>
-            <li><strong>Documentación:</strong> Archivos README o documentación detallada que explica cómo usar el proyecto.</li>
-            <li><strong>Ejemplos:</strong> Archivos de audio de ejemplo o casos de uso que muestran las capacidades del proyecto.</li>
-            <li><strong>Licencia:</strong> Información sobre la licencia del proyecto, que define cómo se puede usar y distribuir el código.</li>
-        </ul>
-        <p>
-            Para acceder al repositorio, visita la página oficial en GitHub: <a href="https://github.com/brahmkshatriya/echo" target="_blank">https://github.com/brahmkshatriya/echo</a>.
         </p>
         <p>
             Este repositorio puede ser útil para desarrolladores interesados en el procesamiento de audio, la creación de herramientas de audio o la experimentación con tecnologías relacionadas con el sonido.
@@ -186,7 +239,7 @@
             Casa o Inicio
             <span class="material-icons">home</span>
         </a>
-        <a href="../index.html" class="nav-button">
+        <a href="../Fuentes/Fuentes.html" class="nav-button">
             Seguir a Fuentes
             <span class="material-icons">arrow_forward</span>
         </a>
@@ -236,6 +289,9 @@
         <span class="material-icons">arrow_upward</span>
     </a>  
 <!--botones direccionales-->
-<small style="color: aliceblue;">© 2024 Blog sobre Los Diferentes tipos de formatos de música. Universidad Nacional de La Amazonia Peruana.</small>
+
 </body>
+<div class="footer">
+    <small>© 2024 Blog sobre Los Diferentes tipos de formatos de música. Universidad Nacional de La Amazonia Peruana.</small>
+</div>
 </html>

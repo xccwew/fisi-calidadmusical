@@ -652,7 +652,7 @@ body {
         }
 
         .google-style-title {
-            background-color: greenyellow;
+            background-color: crimson;
             color: #202124;
             border-radius: 10px;
             font-size: 300%;
@@ -660,3 +660,6 @@ body {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
           }
+          .footer {
+            text-align: center; /* Centra el texto horizontalmente */
+        }
