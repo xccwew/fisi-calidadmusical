@@ -651,4 +651,7 @@ body {
                 justify-content: center;
             }
         }
+        .footer {
+          text-align: center; /* Centra el texto horizontalmente */
+      }
         
