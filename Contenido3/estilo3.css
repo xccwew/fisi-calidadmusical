@@ -700,3 +700,7 @@ body {
       .footer small {
           color: aliceblue; /* Color del texto */
       }
+      .barritas {
+        max-width: 400px;
+        margin: 20px auto;
+      }
